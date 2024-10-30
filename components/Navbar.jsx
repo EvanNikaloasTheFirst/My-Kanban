@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styles from '../src/styles/navbar.module.css'
+import styles from "@/styles/navbar.module.css"
 import { useRouter } from 'next/router';
 
 export default function Navbar() {
