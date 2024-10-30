@@ -7,6 +7,7 @@ import PopupModal from "../../components/PopUpModal";
 import TicketWindow from "../../components/TicketWindow";
 import { useEffect, useState } from "react";
 import BugBlock from "../../components/BugBlock";
+import Navbar from "@components/Navbar";
 
 export default function Home() {
     const [NotStarted, setNotStarted] = useState([]);
@@ -210,9 +211,10 @@ function handleOnDrop(e, endLocation) {
 
   return (
     <div className={styles.home}>
+        <Navbar/>
     <main>
         <div className={detailedProject.detailedPage}>
-           <h1>Your Kanban</h1>
+           <h1>My Kanban</h1>
             <div className={detailedProject.ticketsBox} >
             <div className={detailedProject.projectActionBtn}>
             <div className={detailedProject.createTicketBtn}
