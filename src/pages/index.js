@@ -1,10 +1,7 @@
-import Head from "next/head";
-import Image from "next/image";
-import localFont from "next/font/local";
 import styles from "@/styles/Home.module.css";
 import detailedProject from "@/styles/projectDetailed.module.css";
-import PopupModal from "@/stylescomponents/PopUpModal";
-import TicketWindow from "@/stylescomponents/TicketWindow";
+import PopupModal from "@/styles/components/PopUpModal";
+import TicketWindow from "@/styles/components/TicketWindow";
 import { useEffect, useState } from "react";
 import BugBlock from "@components/BugBlock";
 import Navbar from "@components/Navbar";
