@@ -1,7 +1,7 @@
 import styles from "@/styles/Home.module.css";
 import detailedProject from "@/styles/projectDetailed.module.css";
-import PopupModal from "@/styles/components/PopUpModal";
-import TicketWindow from "@/styles/components/TicketWindow";
+import PopupModal from "@../../components/PopUpModal";
+import TicketWindow from "@../../components/TicketWindow";
 import { useEffect, useState } from "react";
 import BugBlock from "@components/BugBlock";
 import Navbar from "@components/Navbar";
