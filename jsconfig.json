@@ -1,7 +1,11 @@
 {
   "compilerOptions": {
+    "baseUrl": "./", // Base directory for resolving non-relative module names
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["src/*"], // Alias for src directory
+      "@components/*": ["components/*"], // Alias for components directory
+      "@public/*": ["public/*"], // Alias for public directory
+      "@lib/*": ["lib/*"] // Alias for lib directory
     }
   }
 }

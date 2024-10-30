@@ -1,0 +1,433 @@
+
+
+.detailedPage h1{
+    color: #FFF;
+    text-align: center;
+    font-size: 1.3rem;
+    padding-top: 20px;
+
+}
+.ticketsBox {
+    padding: 10px;
+    height: 70vh;
+    margin: 0 auto;
+}
+
+.TicketBlock h2{
+    font-size: 20px;
+    font-weight: 400;
+    color: #FFF;
+
+
+}
+.viewKanban{
+    display: flex;
+    flex-direction: row;;
+}
+
+.ticketsBox ul {
+    background-color: transparent;
+    /* filter: blur(2px); */
+}
+
+
+.ticketsBox {
+    display: grid;
+    flex-grow: 1;
+    justify-content: center;
+    height: 100%;
+    
+}
+
+.ticketsBox ul li {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 4px;
+;
+}
+
+
+
+.TicketBlock{
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    width: 300px;
+    border: 2px solid green;
+    border-radius: 4px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.TicketBlock ul{
+    flex-direction: column;
+    margin: 0 auto;
+    height: 70vh;
+}
+
+.TicketBlock h2{
+    text-align: center;
+    background-color: green;
+    color: #FFF;
+    /* height: 75px; */
+}
+.draggableStyle{
+    background-color: green;
+    height: 100px;
+    border-radius: 4px;
+}
+
+
+
+.bugBlock {
+    background: #41414141;
+    min-height: 160px;
+    max-height:190px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 250px;
+    border-radius: 4px;
+    border: 1px solid green;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.ticketDesc{
+    text-align: left;
+    font-size: 14px;
+}
+
+.bugBlock ul {
+    display: flex;
+    flex-direction: column;
+}
+.bugBlock ul li{
+    background-color: transparent;
+
+    color: #FFF;
+}
+
+.priority{
+    position: relative;
+    text-align: center;
+    min-width: fit-content;
+    width: 30px;;
+    padding: 3px;
+    bottom: 17px;
+}
+
+.type{
+    position: relative;
+    text-align: left;
+    width: 95px;
+
+    padding: 3px; 
+}
+
+.type p{
+    position: relative;
+    background-color: transparent;
+    font-size: 14px;
+    color: #FFF; 
+}
+
+.priority p {
+    position: relative;
+    background-color: transparent;
+    font-size: 14px;
+    color: #FFF;
+}
+
+.projectId p{
+    position: relative;
+    bottom: 45px;
+    font-size: 8px;
+    background-color: transparent;
+}
+
+
+.ticketType{
+    position: relative;
+    bottom: 10px;
+   
+}
+
+
+
+.bugBlockIcon{
+    background-color: transparent;
+    padding: 5px;
+    position: relative;
+    bottom: 20px;
+    background-color: #000;
+    border: 2px solid #454545;
+    width: 15px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+
+
+
+.alterTicketDiv{
+    background-color: transparent;
+}
+
+
+.ticketType p {
+    background-color: transparent; 
+    font-size: 14px;
+}
+
+
+
+@media only screen and (max-width: 1220px) {
+
+    .projectActionBtn{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+
+    }
+    .createTicketBtn{
+        margin-left: 25px;
+    }
+
+    .kanban{
+        display: none;
+    }
+    .TicketBlock h2{
+        width: 100vw;
+
+    }
+    .bugBlock {
+        width: 250px;
+        border-radius: 4px;
+        margin: 0 auto;
+        justify-content: center;;
+    }
+
+    .TicketBlock{
+        display: grid;
+        width: 80vw;
+        overflow-x: hidden;
+    }
+    .ticketsBox ul {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    height: 100%;
+    background-color: transparent;  
+}
+    .bugBlockList li{
+        margin: 0;
+    }
+
+    .bugBlock ul li{
+        margin-right: 0;
+    }
+    .priority{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    
+    .priority p {
+        top: 0;
+    }
+
+    .viewKanban{
+        display: flex;
+        flex-direction: row;
+    }
+    
+  }
+
+.bugBlockList {
+    background-color: transparent;
+    font-size: 15px;
+    text-align: center;
+    color: #FFF;
+}
+.bugBlockList li{
+    background-color: transparent;
+
+}
+
+.bugBlock a:any-link{
+    text-decoration: none;
+}
+
+
+.createTicketBtn{
+    border-radius: 4px;
+    border: .5px solid #FFF;
+    width: 150px;
+    background-color: green;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #FFF;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    margin-right: 10px;
+}
+
+.projectActionBtn{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.kanban{
+    border-radius: 4px;
+    border: .5px solid #FFF;
+    width: 150px;
+    background-color: rgb(62, 220, 62);
+    margin-bottom: 10px;
+    text-align: center;
+    color: #FFF;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    margin-left: 25px;
+ 
+}
+
+ .kanban select{
+    background-color: transparent;
+    color: #FFF;
+}
+
+.moreBtn{
+    width: 100px;
+    height: 20px;
+    margin: 0 auto;
+    text-align: center;
+    color:#FFF;
+    border-radius: 2px;
+    position: relative;
+    top: 5px;
+    border: 1px solid #FFF;
+    background-color: transparent;
+    font-size: 12px;
+}
+
+.ticketIcon{
+    display: flex;
+}
+
+/* Pop up modal */
+.popupBox {
+    position: fixed; /* Change to fixed for centering relative to the viewport */
+    top: 50%; /* Position from the top */
+    left: 50%; /* Position from the left */
+    transform: translate(-50%, -50%); /* Offset by half its width and height */
+    min-height: fit-content;
+    width: 400px;
+    
+    background: rgb(34,139,34);
+    background: linear-gradient(133deg, rgba(34,139,34,1) 0%, rgba(144,233,144,1) 100%);
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #FFF;
+    border-radius: 4px;
+    z-index: 999;
+}
+
+
+.editTicketPane {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.popupBox h1{
+    background-color: transparent;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.ticketForm{
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+
+
+}
+
+.createTicketLabel{
+background-color: transparent;
+text-align: center;
+}
+
+.ticketForm input,.status,.description,.inputDesc{
+    border: 1px solid white;
+    width: 80%;
+    height: 35px;
+    margin: 0 auto;
+    color: #FFF;
+    background-color: transparent;
+    border-radius: 3px;
+}
+
+.ticketForm .inputDesc,.textarea{
+    height: 75px;
+    
+}
+.status{
+    margin: 0 auto;
+    
+}
+.submitTicketBtn{
+    position: relative;
+    background-color: white;
+    width: 100px;
+    color: green;
+    margin-top: 10px;
+    height: 30px;
+    font-size: .9rem;
+    margin: 0 auto;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.closeModal{
+    position: relative;
+    background-color: red;
+    width: 100px;
+    color: #FFF;
+    border: 1px solid #FFF;
+    margin-top: 10px;
+    height: 30px;
+    font-size: .9rem;
+    margin: 0 auto;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.minimizeModal{
+    position: relative;
+    background-color: transparent;
+    width: 100px;
+    color: #FFF;
+    border: 1px solid #FFF;
+    margin-top: 10px;
+    height: 30px;
+    font-size: .9rem;
+    margin: 0 auto;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+.divOfButtons{
+    position: relative;
+    background-color: transparent;
+    margin: 0 auto;
+    top: 15px;
+    left: 10px;
+    font-size: 10px;
+}
