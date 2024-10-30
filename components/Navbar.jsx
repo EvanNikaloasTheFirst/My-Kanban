@@ -10,8 +10,6 @@ export default function Navbar() {
         setToggleNav(prevState => !prevState);
     }
 
-   
-    
 
     return (
         <header className={styles.header}>
