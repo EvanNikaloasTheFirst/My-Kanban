@@ -10,25 +10,7 @@ export default function Navbar() {
         setToggleNav(prevState => !prevState);
     }
 
-    async function logout() {    
-        try {
-            const response = await fetch('http://localhost:8080/auth/logout', {
-                method: 'POST', // Typically POST for logout
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                credentials: 'include', // Ensure cookies are sent
-            });
-    
-            if (response.ok) {
-                router.push('/login'); 
-            } else {
-                console.error(`Logout failed with status: ${response.status}`);
-            }
-        } catch (error) {
-            console.error("Error during logout:", error);
-        }
-    }
+   
     
 
     return (
