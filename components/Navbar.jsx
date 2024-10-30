@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import styles from "@/styles/Navbar.module.css"
-import { useRouter } from 'next/router';
 
+import { useRouter } from 'next/router';
+import styles from "../../styles/Navbar.module.css";
 export default function Navbar() {
     const router = useRouter();
     const [toogleNav, setToggleNav] = useState(false);
