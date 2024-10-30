@@ -233,7 +233,7 @@ function handleOnDrop(endLocation) {
                     Create A Ticket
                 </div>
 
-                <div className={detailedProject.createTicketBtn}>          
+                {/* <div className={detailedProject.createTicketBtn}>          
                    Filter    <br/>
         <select id="type" onChange={(e) => setFilterValue(e.target.value)} className={styles.filterBar}
         aria-label="Select type">
@@ -243,7 +243,7 @@ function handleOnDrop(endLocation) {
         <option value="Medium">Medium</option>
         <option value="Low">Low</option>
     </select>
-                </div>
+                </div> */}
                 
                 {showModal && 
                     <PopupModal  onClose={() => setShowModal(false)} />
