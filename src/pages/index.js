@@ -6,7 +6,7 @@ import detailedProject from "@/styles/projectDetailed.module.css";
 import PopupModal from "../../components/PopUpModal";
 import TicketWindow from "../../components/TicketWindow";
 import { useEffect, useState } from "react";
-import BugBlock from "../../components/BugBlock";
+import BugBlock from "@components/BugBlock";
 import Navbar from "@components/Navbar";
 
 export default function Home() {
