@@ -83,8 +83,8 @@
 
 .bugBlock {
     background: #41414141;
-    min-height: 160px;
-    max-height:190px;
+    min-height: 130px;
+    max-height:160px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     width: 250px;
     border-radius: 4px;
@@ -120,7 +120,9 @@
 .type{
     position: relative;
     text-align: left;
-    width: 95px;
+
+    min-width: fit-content;
+    max-width: 50px;
 
     padding: 3px; 
 }

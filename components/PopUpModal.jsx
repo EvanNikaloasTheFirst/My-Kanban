@@ -82,10 +82,10 @@ export default function PopupModal({ onClose }) {
                 >
                     <option value="" disabled>Select type</option>
                     <option value="Bug">Bug</option>
-                    <option value="Improvement">Improvement</option>
-                    <option value="Core Feature">Core Feature</option>
+                    <option value="Extra">Extra</option>
+                    <option value="Study">Study</option>
                     <option value="Task">Task</option>
-                    <option value="Support">Support</option>
+                    <option value="Work">Work</option>
                 </select>
 
                 <label htmlFor="Priority" className={styles.createTicketLabel}>Priority:</label>
@@ -109,8 +109,8 @@ export default function PopupModal({ onClose }) {
                     defaultValue="" // Ensure the default selected value is empty
                 >
                     <option value="" disabled>Select status</option>
-                    <option value="In progress">In progress</option>
-                    <option value="Not started">Not Started</option>
+                    <option value="In Progress">In progress</option>
+                    <option value="Not Started">Not Started</option>
                     <option value="Completed">Completed</option>
                     <option value="In Review">In review</option>
                     <option value="Feedback">Feedback</option>

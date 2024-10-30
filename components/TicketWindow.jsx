@@ -41,20 +41,19 @@ export default function TicketWindow({onClose, ticketDescription,ticketType,tick
                     if (ticketData.ticketId === localTicketId) {
                         // Save the updated ticket back to local storage
                         localStorage.setItem(key, JSON.stringify(updatedTicketForm));
-                        ticketFound = true; // Set flag to true if ticket is found
-                        break; // Exit the loop once found
+                        refreshPage()
+                        
                     }
                 }
             }
     
             if (!ticketFound) {
-                alert("Ticket not found");
+                console.log("Ticket not found");
             } else {
-                alert("Ticket updated successfully!"); // Optional success message
+                console.log("Ticket updated successfully!"); // Optional success message
             }
         } catch (e) {
             console.log('Error updating ticket:', e);
-            alert("An error occurred while updating the ticket");
         } finally {
             onClose(); // Close the modal/window
         }
@@ -75,10 +74,8 @@ export default function TicketWindow({onClose, ticketDescription,ticketType,tick
                         const item = localStorage.getItem(key);
                         const parsedItem = JSON.parse(item);
                         // Check if the ticketId matches
-                        alert(parsedItem.ticketId)
                         if (parsedItem.ticketId === localTicketId) { // Ensure you're using the correct property
                             localStorage.removeItem(key);
-                            alert(`Ticket ${ticketId} deleted successfully.`);
                             break; // Exit the loop once the ticket is found and deleted
                         }
                     }

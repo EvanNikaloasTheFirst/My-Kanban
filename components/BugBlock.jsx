@@ -1,6 +1,6 @@
 import detailedProject from "@/styles/projectDetailed.module.css";
 
-export default function BugBlock({draggable, onDragStart,item, isEditing }) {
+export default function BugBlock({draggable, onDragStart,item }) {
 const priorityBackground = {
 borderRadius:'3px',
 }
