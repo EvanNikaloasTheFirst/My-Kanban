@@ -35,12 +35,15 @@ function generateStatusBar(status) {
         draggable={draggable}
         onDragStart={onDragStart}>
           <ul>
-            <li className={detailedProject.ticketDesc}>{item.description}</li>
+
+            <li className={detailedProject.ticketDesc}>Description:
+            <br/> 
+              {item.description}</li>
             <li className={detailedProject.type} style={generateStatusBar(item.type)}>
-              <p>{item.type}</p>
+              <p className={detailedProject.descTag}>Type: {item.type}</p>
             </li>
             <li className={detailedProject.priority} style={generateStatusBar(item.priority)}>
-              <p>{item.priority}</p>
+              <p>Priority: {item.priority}</p>
             </li>
             <li>
             <div className={detailedProject.alterTicketDiv}>

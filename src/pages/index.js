@@ -178,8 +178,6 @@ const updateTicket = async (endLocation,ticket) => {
                 localStorage.setItem(key, JSON.stringify(updatedTicketForm));
                 break; // Exit the loop once found
             }
-        }else{
-            alert("Err")
         }
     }
 } catch (e) {

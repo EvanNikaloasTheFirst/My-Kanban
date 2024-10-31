@@ -83,8 +83,8 @@
 
 .bugBlock {
     background: #41414141;
-    min-height: 130px;
-    max-height:160px;
+    min-height: 150px;
+    max-height:190px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     width: 250px;
     border-radius: 4px;
@@ -96,7 +96,31 @@
 .ticketDesc{
     text-align: left;
     font-size: 14px;
+    word-wrap: break-word;
+    overflow-y: scroll;
+    max-height: 55px;  /* Set a fixed maximum height */ 
+    scrollbar-width: thin;
+    scrollbar-color: #888 #f1f1f1;
+    -webkit-overflow-scrolling: touch
 }
+.ticketDesc::-webkit-scrollbar {
+    width: 8px;
+}
+
+.ticketDesc::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+.ticketDesc::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+.ticketDesc::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
 
 .bugBlock ul {
     display: flex;
@@ -114,19 +138,21 @@
     min-width: fit-content;
     width: 30px;;
     padding: 3px;
-    bottom: 17px;
+    bottom: 35px;
 }
 
 .type{
     position: relative;
     text-align: left;
-
     min-width: fit-content;
     max-width: 50px;
-
     padding: 3px; 
 }
-
+.descTag{
+    position: relative;
+    bottom: 15px;
+    right: 3px;
+}
 .type p{
     position: relative;
     background-color: transparent;
@@ -161,7 +187,7 @@
     background-color: transparent;
     padding: 5px;
     position: relative;
-    bottom: 20px;
+    bottom: 40px;
     background-color: #000;
     border: 2px solid #454545;
     width: 25px;
