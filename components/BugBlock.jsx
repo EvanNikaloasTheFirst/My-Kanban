@@ -39,7 +39,7 @@ function generateStatusBar(status) {
             <li className={detailedProject.ticketDesc}>Description:
             <br/> 
               {item.description}</li>
-            <li className={detailedProject.type} style={generateStatusBar(item.type)}>
+            <li className={detailedProject.type}>
               <p className={detailedProject.descTag}>Type: {item.type}</p>
             </li>
             <li className={detailedProject.priority} style={generateStatusBar(item.priority)}>
