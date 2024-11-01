@@ -1,6 +1,4 @@
 # 📈 BugTracker
-
-### *(Note the actual development is stored on a different repository)
 ## This is the Local Version (Plug & Play)
 Welcome to BugTracker! 🚀
 
