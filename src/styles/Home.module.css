@@ -1,0 +1,11 @@
+.home{
+  background-color: #000;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.filterBar{
+  background-color: transparent;
+}
